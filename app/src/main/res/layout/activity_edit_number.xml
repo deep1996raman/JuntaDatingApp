@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.skeleton.activity.EditNumberActivity">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sign_up_screen_image"/>
+
+        <include
+            android:id="@+id/llToolbar"
+            layout="@layout/custom_top_toolbar"/>
+
+        <LinearLayout
+            android:id="@+id/lldisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llToolbar"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/spacing_large">
+
+            <com.skeleton.util.customview.MaterialEditText
+                android:id="@+id/etNewNumber"
+                style="@style/EtTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_normal"
+                android:hint="@string/edittext_msg_new_Number"
+                android:inputType="number"/>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                style="@style/btnTheme"
+                android:layout_margin="@dimen/margin_normal"
+                android:background="@drawable/green_btn"
+                android:text="@string/button_submit"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/lldisplay"
+            android:background="@color/white"></LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

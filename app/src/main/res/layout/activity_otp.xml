@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.skeleton.activity.OtpActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/splash_bg"/>
+
+
+    <include
+        android:id="@+id/top_toolbar"
+        layout="@layout/custom_top_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_toolbar"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_medium">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_medium"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/unlocked"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tvResendOtp"
+                    style="@style/tvStyleOtp"
+                    android:drawableStart="@drawable/resend_o_t_p"
+                    android:text="@string/resend_otp"/>
+
+
+                <TextView
+                    android:id="@+id/tvEditNumber"
+                    style="@style/tvStyleOtp"
+                    android:drawableStart="@drawable/e_dit_number"
+                    android:text="@string/edit_number"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/otp_text"
+            android:textSize="@dimen/font_large"/>
+
+        <TextView
+            android:id="@+id/tvphoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/font_xxxlarge"/>
+
+        <TextView
+            android:id="@+id/tvPhoneNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:gravity="center_horizontal"
+            android:textColor="#4a4a4a"
+            android:textSize="@dimen/font_xlarge"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/spacing_normal">
+
+
+            <EditText
+                android:id="@+id/etFirst"
+                style="@style/etStyleOtp"/>
+
+            <EditText
+                android:id="@+id/etSecond"
+                style="@style/etStyleOtp"/>
+
+            <EditText
+                android:id="@+id/etThird"
+                style="@style/etStyleOtp"/>
+
+            <EditText
+                android:id="@+id/etFourth"
+                style="@style/etStyleOtp"/>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnVerify"
+            style="@style/commonBtnStyle"
+            android:background="@drawable/bg_green"
+            android:text="@string/verify"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

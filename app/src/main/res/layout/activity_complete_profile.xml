@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg"
+    tools:context="com.skeleton.activity.CompleteProfileActivity">
+
+    <include
+        android:id="@+id/tvToolbarTop"
+        layout="@layout/custom_top_toolbar"/>
+
+    <com.skeleton.util.customview.CustomViewPager
+        android:id="@+id/customViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvToolbarTop">
+
+    </com.skeleton.util.customview.CustomViewPager>
+
+</RelativeLayout>

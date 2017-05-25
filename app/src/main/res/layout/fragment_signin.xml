@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+        <com.skeleton.util.customview.MaterialEditText
+            android:id="@+id/etLoginName"
+            style="@style/EtTheme"
+            android:hint="@string/email_phone"
+            />
+
+        <com.skeleton.util.customview.MaterialEditText
+            android:id="@+id/etLoginPassword"
+            style="@style/EtTheme"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            />
+
+        <TextView
+            style="@style/EtTheme"
+            android:text="@string/forgotpass"
+            android:textSize="16sp"
+            />
+
+        <CheckBox
+            android:id="@+id/cbRememberMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:gravity="center"
+            android:text="Remember Me"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            style="@style/btnTheme"
+            android:layout_margin="@dimen/margin_xlarge"
+            android:background="@drawable/bg_green"
+            android:text="@string/Login"
+            />
+
+
+        <Button
+            android:id="@+id/btnSignUpWithFAcebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_xlarge"
+            android:layout_marginStart="@dimen/margin_xlarge"
+            android:background="@drawable/bg_blue"
+            android:text="@string/signupfb"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
